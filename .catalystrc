@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "26818000000134115",
+      "name": "ReactInCatalyst",
+      "domain": {
+        "id": "10091787850",
+        "name": "reactincatalyst-860829830.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "860829830",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

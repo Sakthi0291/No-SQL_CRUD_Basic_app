@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    color: #121111;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Card Styling */
+  .card {
+    border: none;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background-color: #56d973;
+    color: white;
+    padding: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    /* border-bottom: 2px solid #0056b3; */
+    text-align: center;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Form Styling */
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .col-md-6,
+  .col-md-4 {
+    flex: 1 1 calc(50% - 15px);
+    min-width: 200px;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #495057;
+  }
+  
+  input,
+  select {
+    width: 93%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Button Styling */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  button.btn-primary {
+    background-color: #000000;
+    color: white;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #34de19;
+  }
+  
+  button.btn-secondary {
+    background-color: #000000;
+    width: 14%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #f00000;
+  }
+
+  #status.form-control{
+    width: 387%;
+  }
+
+.card-header h2{
+  color: white;
+}
+  
+
+
+
