@@ -15,7 +15,8 @@ The Task Manager application is built using Zoho Catalyst NoSQL DB to manage tas
 
 **Filter Tasks:**
 
-* Users can filter tasks using:
+ Users can filter tasks using:
+ 
 * User ID (Partition Key)
 * Task Name (Sort Key)
 * Status
