@@ -22,8 +22,9 @@ export default function FilterTask() {
   const filterTasks = async () => {
     console.log("Filtering tasks with: ", { userID, taskName, status });
     await axios.get('/server/react_in_catalyst_function/filtertask', { params: { userID, taskName, status } }).then((response) => {
-      
+    console.log("RES DATA:::  ",response.data);
     setTasks(response.data);
+    console.log("TASKS::: ", tasks);
     })
     .catch((err) => {
       console.log(err.response);
@@ -131,7 +132,7 @@ export default function FilterTask() {
       Status
     </option>
             <option value="Pending">Pending</option>
-            <option value="Complete">Complete</option>
+            <option value="Completed">Completed</option>
           </select>
         </div>
       </div>
@@ -219,9 +220,11 @@ export default function FilterTask() {
           name="DueDate"
           value={userData.DueDate}
           onChange={handleChange}
+          min={new Date().toISOString().split('T')[0]} // Prevents past dates
           required
         />
       </div>
+
 
       <div>
         <label htmlFor="status">Status:</label>

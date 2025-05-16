@@ -3,7 +3,7 @@ var express = require('express');
 const tasks = require('./sample.json');
 var catalyst = require('zcatalyst-sdk-node');
 const { NoSQLItem} = require('zcatalyst-sdk-node/lib/no-sql'); 
-const { NoSQLReturnValue, NoSQLConditionGroupOperator, NoSQLUpdateOperationType } = require('zcatalyst-sdk-node/lib/no-sql/enum');
+const { NoSQLReturnValue, NoSQLConditionGroupOperator } = require('zcatalyst-sdk-node/lib/no-sql/enum');
 const { NoSQLMarshall, NoSQLEnum } = require('zcatalyst-sdk-node/lib/no-sql'); 
 const { NoSQLOperator } = NoSQLEnum; 
 var app = express();
@@ -14,7 +14,6 @@ app.use(express.static('public'));
 app.post('/addtask', async (req, res) => {
 
 	let {userID, taskName, dueDate, priority, status} = req.body;
-
 
 		var  capp = catalyst.initialize(req);
 		const nosql = capp.nosql(); 
@@ -45,6 +44,7 @@ app.post('/addtask', async (req, res) => {
 app.get('/filtertask', async (req, res) => {
 
 	const query = req.query;
+
 	const parsedData = {
 		index_data: {
 		  userID: query.userID,
@@ -52,8 +52,9 @@ app.get('/filtertask', async (req, res) => {
 		  status: query.status
 		},
 	  };
+
 	 const userId = parsedData.index_data.userID;
-	 console.log("User ID: ", userId);
+	
 	var  capp = catalyst.initialize(req);
 	const nosql = capp.nosql(); 
 	const table = nosql.table('26818000000134374'); 
@@ -68,7 +69,7 @@ try {
 				attribute: 'UserID', 
 				operator: NoSQLOperator.EQUALS, 
 				value: NoSQLMarshall.makeString(parsedData.index_data.userID) 
-			} ,
+			},
 			consistent_read: true, 
 			limit: 10, 
 			forward_scan: true
@@ -83,11 +84,13 @@ try {
 			itemResponse["Status"] = data.item.get("Status");
 			responseData.push(itemResponse);
 		})
-		console.log("Res - End");
-		res.status(200).send(responseData);
+		
+		const filteredData = await filterByStatus(responseData, parsedData);
+        console.log("Filtered Data  :",filteredData);
+		res.status(200).send(filteredData);
 	}
 	else if(userId != null && parsedData.index_data.taskName != null)
-		{
+	{
     //Filter using Partition key and sort key"
 	var  capp = catalyst.initialize(req);
 	const nosql = capp.nosql(); 
@@ -130,7 +133,6 @@ try {
 		const filteredData = await filterByStatus(responseData, parsedData);
         console.log("Filtered Data  :",filteredData);
 		res.send(filteredData);
-
 	} catch (error) {
 	console.error("Error fetching task:", error);
     res.status(500).send("Failed to fetch task into NoSQL table");
@@ -183,7 +185,6 @@ app.delete('/deletetask', async(req,res) => {
 
 app.post('/updatetask', async(req,res) => { 
 
-	
 	let {UserID, TaskName, DueDate, Priority, Status} = req.body;
 
 		var capp = catalyst.initialize(req);
@@ -210,11 +211,11 @@ app.post('/updatetask', async(req,res) => {
 		}
 });
 
-
 async function filterByStatus(data, parseData) {
 	const respData = await data.filter((task) => task.Status.toLowerCase() === parseData.index_data.status.toLowerCase() );
 	console.log("Response data  ",respData);
 	return respData;
 }
+
 
 module.exports = app;

@@ -10,6 +10,9 @@ export default function AddTask() {
   const [priority, setPriority] = useState('High');
   const [status, setStatus] = useState('Pending');
 
+  const today = new Date().toISOString().split('T')[0];
+
+
   const addTask = async(event) => {
     event.preventDefault();
 
@@ -78,17 +81,19 @@ export default function AddTask() {
 
             {/* Due Date, Priority, and Status */}
             <div className="form-row align-items-center">
-              <div className="col-md-4 mb-3">
-                <label htmlFor="dueDate">Due Date</label>
-                <input
-                  type="date"
-                  className="form-control"
-                  id="dueDate"
-                  value={dueDate}
-                  onChange={(e) => setDueDate(e.target.value)}
-                  required
-                />
-              </div>
+                <div className="col-md-4 mb-3">
+                  <label htmlFor="dueDate">Due Date</label>
+                  <input
+                    type="date"
+                    className="form-control"
+                    id="dueDate"
+                    value={dueDate}
+                    onChange={(e) => setDueDate(e.target.value)}
+                    min={today} // This restricts past dates
+                    required
+                  />
+            </div>     
+
               <div className="col-md-4 mb-3">
                 <label htmlFor="priority">Priority</label>
                 <select
@@ -113,7 +118,7 @@ export default function AddTask() {
                   required
                 >
                   <option value="Pending">Pending</option>
-                  <option value="Complete">Complete</option>
+                  <option value="Completed">Completed</option>
                 </select>
               </div>
             </div>

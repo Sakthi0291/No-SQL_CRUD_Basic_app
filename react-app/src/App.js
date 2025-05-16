@@ -16,6 +16,7 @@ export default function App() {
          <Route path='' element={<Navigate to='/AddTask' />}></Route>
          <Route path='/AddTask' element= {<AddTask/>}></Route>
          <Route path='/FilterTask' element={<FilterTask/>}></Route>
+
      </Routes>
     </div>
     </HashRouter>
