@@ -4,6 +4,8 @@
 
 The Task Manager application is built using Zoho Catalyst NoSQL DB to manage tasks efficiently. It allows users to add, filter, edit, and delete tasks while ensuring data is stored and retrieved effectively from the NoSQL database.
 
+Development URL -  https://reactincatalyst-860829830.development.catalystserverless.com/app/index.html
+
 **Features**
 
 **Add Tasks:** Users can create tasks by providing the following details:
