@@ -13,7 +13,7 @@ export default function Header() {
       <span >Task Manager</span>
       <ul>
         <li>
-            <Link to={"/AddTask"}>Home</Link>
+            <Link to={"/AddTask"}>Add task</Link>
         </li>
         <li>
             <Link to={"/FilterTask"}>Filter</Link>

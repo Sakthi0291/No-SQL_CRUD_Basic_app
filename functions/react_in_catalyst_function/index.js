@@ -190,9 +190,10 @@ app.post('/updatetask', async(req,res) => {
 		var capp = catalyst.initialize(req);
 		const nosql = capp.nosql(); 
 		const table = nosql.table('26818000000134374'); 
-	
 		try {
-		const plainInsert = await table.insertItems({   
+
+            //We used the insert SDK method here to overwrite the existing data, rather than using the update SDK method.
+  			const plainInsert = await table.insertItems({   
 			item: NoSQLItem.from({  
 				"UserID": UserID,
 				"DueDate": DueDate,
@@ -200,10 +201,8 @@ app.post('/updatetask', async(req,res) => {
 				"Priority": Priority,
 				"Status": Status
 			  }),       
-			
 			return: NoSQLReturnValue.NULL 
 		  });
-		console.log("Group Insert  ",  plainInsert);
 		res.send({"message": "Items updated successfully!"});
 		} catch (error) {
 			console.error("Error inserting item:", error);

@@ -33,7 +33,7 @@ body {
   }
   
   .card-header {
-    background-color: #56d973;
+    background-color: #439600;
     color: white;
     padding: 15px;
     font-size: 1.25rem;
@@ -100,6 +100,7 @@ body {
   }
   
   button.btn-primary {
+    width: 16%;
     background-color: #000000;
     color: white;
   }
