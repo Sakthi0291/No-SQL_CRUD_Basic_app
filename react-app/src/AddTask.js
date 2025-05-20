@@ -9,9 +9,7 @@ export default function AddTask() {
   const [dueDate, setDueDate] = useState('');
   const [priority, setPriority] = useState('High');
   const [status, setStatus] = useState('Pending');
-
   const today = new Date().toISOString().split('T')[0];
-
 
   const addTask = async(event) => {
     event.preventDefault();
@@ -23,13 +21,12 @@ export default function AddTask() {
       priority,
       status
     };
-    console.log('Adding Task:', newTask);
-
     await axios.post("/server/react_in_catalyst_function/addtask",newTask).then((res) => {
        window.confirm("Task added successfully");
        clearForm();
-    })
-
+    }).catch(function (error) {
+      alert(error.message);
+    });
   };
 
   const clearForm = () => {
@@ -40,11 +37,9 @@ export default function AddTask() {
     setStatus('Pending');
   };
 
-
   return (
     <>
     <div className="container my-4">
-
       {/* Add To-Do Item Form */}
       <div className="card my-4">
         <div className="card-header">

@@ -13,15 +13,12 @@ app.use(express.static('public'));
 
 app.post('/addtask', async (req, res) => {
 
-	let {userID, taskName, dueDate, priority, status} = req.body;
-
+	    let {userID, taskName, dueDate, priority, status} = req.body;
 		var  capp = catalyst.initialize(req);
 		const nosql = capp.nosql(); 
 		const table = nosql.table('26818000000134374'); // You table ID
-	
 		try {
 		const plainInsert = await table.insertItems({   
-       
 			item: NoSQLItem.from({  
 				"UserID": userID,
 				"DueDate": dueDate,
@@ -29,22 +26,20 @@ app.post('/addtask', async (req, res) => {
 				"Priority": priority,
 				"Status": status
 			  }),
-			         
 			return: NoSQLReturnValue.NULL 
 		  });
-
-		  console.log(plainInsert);
-		  res.send({"message": "Thanks for Inserting data into NoSQL DB"});
+		  res.send({"message": "Thanks! Your task has been successfully inserted."});
 		} catch (error) {
-			console.error("Error inserting data:", error);
-			res.status(500).send("Failed to insert data into NoSQL table");
+			res.status(500);
+			res.send({
+				"error": "Internal server error occurred. Please try again in some time."
+			   });
 		}
 });
    
 app.get('/filtertask', async (req, res) => {
 
 	const query = req.query;
-
 	const parsedData = {
 		index_data: {
 		  userID: query.userID,
@@ -52,18 +47,20 @@ app.get('/filtertask', async (req, res) => {
 		  status: query.status
 		},
 	  };
-
-	 const userId = parsedData.index_data.userID;
-	
+	const userId = parsedData.index_data.userID;
+	console.log(userId);
 	var  capp = catalyst.initialize(req);
 	const nosql = capp.nosql(); 
 	const table = nosql.table('26818000000134374'); 
-	
-try {
-
+    
+	try {
+		
 	if(userId != null && parsedData.index_data.taskName === '')
 		{
            //Filter using Partition key
+		   if (parsedData.index_data.status === '') {
+			 return res.status(400).json({ error: "Oops! You forgot to select a status." });
+		   }
 		   const groupOpInsert = await table.queryTable({
 			key_condition: { 
 				attribute: 'UserID', 
@@ -84,14 +81,16 @@ try {
 			itemResponse["Status"] = data.item.get("Status");
 			responseData.push(itemResponse);
 		})
-		
 		const filteredData = await filterByStatus(responseData, parsedData);
-        console.log("Filtered Data  :",filteredData);
 		res.status(200).send(filteredData);
 	}
 	else if(userId != null && parsedData.index_data.taskName != null)
 	{
-    //Filter using Partition key and sort key"
+    //Filter using Partition key and sort key
+
+	if (parsedData.index_data.status === '') {
+		return res.status(400).json({ error: "Oops! You forgot to select a status." });
+	}
 	var  capp = catalyst.initialize(req);
 	const nosql = capp.nosql(); 
 	const table = nosql.table('26818000000134374'); 
@@ -118,7 +117,6 @@ try {
 			limit: 10, 
 			forward_scan: true
 		});
-
 		
 		let responseData = []
 		groupOpInsert.getResponseData().forEach((data) => {
@@ -131,24 +129,23 @@ try {
 			responseData.push(itemResponse);
 		})
 		const filteredData = await filterByStatus(responseData, parsedData);
-        console.log("Filtered Data  :",filteredData);
+        
 		res.send(filteredData);
 	} catch (error) {
 	console.error("Error fetching task:", error);
     res.status(500).send("Failed to fetch task into NoSQL table");
 	}
-
 	}
 	else
 	{
 		return res.send("Kindly enter partiyion key user ID and sort key Taskname");
 	}
-
 	} catch (error) {
-		console.log(error);
-		res.status(500).send("Failed to fetch task into NoSQL table");
+		res.status(500);
+		res.send({
+		 "error": "Internal server error occurred. Please try again in some time."
+		});
 	}
-
 });
 
 app.delete('/deletetask', async(req,res) => {
@@ -166,32 +163,26 @@ app.delete('/deletetask', async(req,res) => {
 		const table = nosql.table('26818000000134374'); 
 	
 		try {
-		console.log("Inside try");
 		const deletedItems = await table.deleteItems({ 
-			// Specify the partition key and sort key value of the data to be deleted 
 			keys: NoSQLItem.from({ "UserID": parsedData.index_data.userID , 'TaskName' : parsedData.index_data.taskName})  
 		  });
-		  console.log(deletedItems);
-		
 		res.status(200).json({
 			message: "Data deleted successfully!",
 		});
-		
 		} catch (error) {
-			console.error("Error deleting item:", error);
-			res.status(500).send("Failed to delete item into NoSQL table");
+			res.status(500);
+			res.send({
+			 "error": "Internal server error occurred. Please try again in some time."
+			});
 		}
 });
 
 app.post('/updatetask', async(req,res) => { 
-
-	let {UserID, TaskName, DueDate, Priority, Status} = req.body;
-
+	    let {UserID, TaskName, DueDate, Priority, Status} = req.body;
 		var capp = catalyst.initialize(req);
 		const nosql = capp.nosql(); 
 		const table = nosql.table('26818000000134374'); 
 		try {
-
             //We used the insert SDK method here to overwrite the existing data, rather than using the update SDK method.
   			const plainInsert = await table.insertItems({   
 			item: NoSQLItem.from({  
@@ -205,14 +196,15 @@ app.post('/updatetask', async(req,res) => {
 		  });
 		res.send({"message": "Items updated successfully!"});
 		} catch (error) {
-			console.error("Error inserting item:", error);
-			res.status(500).send("Failed to insert item into NoSQL table");
+			res.status(500);
+			res.send({
+			 "error": "Internal server error occurred. Please try again in some time."
+			});
 		}
 });
 
 async function filterByStatus(data, parseData) {
 	const respData = await data.filter((task) => task.Status.toLowerCase() === parseData.index_data.status.toLowerCase() );
-	console.log("Response data  ",respData);
 	return respData;
 }
 

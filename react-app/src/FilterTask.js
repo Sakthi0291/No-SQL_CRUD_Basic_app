@@ -14,43 +14,55 @@ export default function FilterTask() {
         Status: "",
       });
     
-
   const [userID, setUserID] = useState('');
   const [taskName, setTaskName] = useState('');
   const [status, setStatus] = useState('');
 
-  const filterTasks = async () => {
-    console.log("Filtering tasks with: ", { userID, taskName, status });
-    await axios.get('/server/react_in_catalyst_function/filtertask', { params: { userID, taskName, status } }).then((response) => {
-    console.log("RES DATA:::  ",response.data);
-    setTasks(response.data);
-    console.log("TASKS::: ", tasks);
-    })
-    .catch((err) => {
-      console.log(err.response);
-    });
-  };
+  // const filterTasks = async () => {
+  //   await axios.get('/server/react_in_catalyst_function/filtertask', { params: { userID, taskName, status } }).then((response) => {
+  //   setTasks(response.data);
+  //   })
+  //   .catch(function (error) {
+  //     console.log(error);
+  //     alert(error.message);
+  //   });
+  // };
 
+  const filterTasks = async () => {
+    try {
+      const response = await axios.get('/server/react_in_catalyst_function/filtertask', {
+        params: { userID, taskName, status }
+      });
+      setTasks(response.data);
+    } catch (error) {
+      if (error.response && error.response.data && error.response.data.error) {
+        console.error('Backend Error:', error.response.data.error);
+        alert(error.response.data.error);
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    }
+  };
+  
 
   const handleDelete = async (taskData) => {
     const isConfirmed = window.confirm("Are you sure you want to delete this user!");
-    console.log("TaskID  ",taskData);
     const userID = taskData.UserID;
     const taskName = taskData.TaskName;
 
    if(isConfirmed)
    {
     await axios.delete(`/server/react_in_catalyst_function/deleteTask`,{ params: { userID, taskName } }).then((response) =>{
-        console.log(response);
         if (window.confirm(response.data.message)) {
             window.location.reload()
         }
+    }).catch(function (error) {
+      alert(error.message);
     });
    }
 }
 
   const handleEdit = async (data)=>{
-   console.log("Dataaa  ",data);
    setUserdata(data);
    setModal(true);
   }
@@ -75,14 +87,13 @@ export default function FilterTask() {
 
    const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log("Submitted UserData   ",userData);
-    
     await axios.post("/server/react_in_catalyst_function/updatetask",userData).then((response) => {
-         console.log("Response  ",response);
         if (window.confirm(response.data.message)) {
             window.location.reload()
         }
-    })
+    }).catch(function (error) {
+      alert(error.message);
+    });
   };
 
 
@@ -244,7 +255,6 @@ export default function FilterTask() {
       <div>
         <button onClick={handleSubmit}>Submit</button>
       </div>
-
                 </div>
             </div>
         )}

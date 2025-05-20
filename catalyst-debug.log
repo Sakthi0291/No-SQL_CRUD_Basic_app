@@ -1,824 +1,517 @@
-[debug] [2025-05-16T02:39:39.586Z] : 
-[debug] [2025-05-16T02:39:39.587Z] : ----------------------------------------------------------------------
-[debug] [2025-05-16T02:39:39.587Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
-[debug] [2025-05-16T02:39:39.587Z] : CLI Version:  1.18.0-beta.12
-[debug] [2025-05-16T02:39:39.587Z] : Platform:     darwin
-[debug] [2025-05-16T02:39:39.587Z] : Node Version: v22.1.0
-[debug] [2025-05-16T02:39:39.587Z] : Time:         Fri May 16 2025 08:09:39 GMT+0530 (India Standard Time)
-[debug] [2025-05-16T02:39:39.587Z] : ----------------------------------------------------------------------
-[debug] [2025-05-16T02:39:39.587Z] : 
-[debug] [2025-05-16T02:39:39.783Z] : > authorizing via signed-in user option
-[debug] [2025-05-16T02:39:39.783Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
-[debug] [2025-05-16T02:39:39.788Z] : > refreshing access token <
-[debug] [2025-05-16T02:39:39.789Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
-<request body omitted>
+[debug] [2025-05-20T10:20:19.655Z] : 
+[debug] [2025-05-20T10:20:19.659Z] : ----------------------------------------------------------------------
+[debug] [2025-05-20T10:20:19.659Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2025-05-20T10:20:19.660Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-05-20T10:20:19.660Z] : Platform:     darwin
+[debug] [2025-05-20T10:20:19.660Z] : Node Version: v22.1.0
+[debug] [2025-05-20T10:20:19.660Z] : Time:         Tue May 20 2025 15:50:19 GMT+0530 (India Standard Time)
+[debug] [2025-05-20T10:20:19.660Z] : ----------------------------------------------------------------------
+[debug] [2025-05-20T10:20:19.660Z] : 
+[debug] [2025-05-20T10:20:19.860Z] : > authorizing via signed-in user option
+[debug] [2025-05-20T10:20:19.860Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2025-05-20T10:20:19.866Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115 
 
-[debug] [2025-05-16T02:39:40.707Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 02:39:44 GMT","content-type":"application/json;charset=UTF-8","content-length":"2596","connection":"close","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2025-05-20T10:20:20.850Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:20:20 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2025-05-16T02:39:40.712Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115 
+[debug] [2025-05-20T10:20:20.853Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/environment 
 
-[debug] [2025-05-16T02:39:41.628Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 02:39:45 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2025-05-20T10:20:21.695Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:20:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2025-05-16T02:39:41.631Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/environment 
-
-[debug] [2025-05-16T02:39:42.503Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 02:39:46 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T02:39:42.599Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
-[debug] [2025-05-16T02:39:42.603Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/function 
+[debug] [2025-05-20T10:20:21.800Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
+[debug] [2025-05-20T10:20:21.804Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/function 
 Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
 
-[debug] [2025-05-16T02:39:43.363Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 02:39:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2025-05-20T10:20:22.696Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:20:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2025-05-16T02:39:43.367Z] : unknown eol undefined hence skipping check
-[debug] [2025-05-16T02:39:43.639Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
-[info] [2025-05-16T02:39:44.572Z] : [react-plugin]: Starting the development server...
+[debug] [2025-05-20T10:20:22.700Z] : unknown eol undefined hence skipping check
+[debug] [2025-05-20T10:20:22.985Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[info] [2025-05-20T10:20:23.995Z] : [react-plugin]: Starting the development server...
 
-[info] [2025-05-16T02:39:44.573Z] : 
-[info] [2025-05-16T02:39:44.573Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
-[info] [2025-05-16T02:39:44.573Z] : 
-[info] [2025-05-16T02:39:45.025Z] : 
-[info] [2025-05-16T02:39:45.025Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
-[info] [2025-05-16T02:39:45.025Z] : ℹ react_in_catalyst_function: http://localhost:3001/server/react_in_catalyst_function/
-[info] [2025-05-16T02:39:45.025Z] : 
-[info] [2025-05-16T02:39:45.025Z] : 
-[info] [2025-05-16T02:39:45.025Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
-[info] [2025-05-16T02:39:45.025Z] : ℹ client[react-app]: http://localhost:3001/app/
-[info] [2025-05-16T02:39:45.025Z] : 
-[info] [2025-05-16T02:39:46.158Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T02:39:46.158Z] : [react-plugin]: 
-[info] [2025-05-16T02:39:46.158Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T02:39:46.159Z] : [react-plugin]: 
-[info] [2025-05-16T02:39:46.159Z] : [react-plugin]:   Local:            http://localhost:3001/
-[info] [2025-05-16T02:39:46.159Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/
-[info] [2025-05-16T02:39:46.159Z] : [react-plugin]: 
-[info] [2025-05-16T02:39:46.159Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T02:39:46.159Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T02:39:46.159Z] : [react-plugin]: 
-[info] [2025-05-16T02:41:14.590Z] : 
+[info] [2025-05-20T10:20:23.996Z] : 
+[info] [2025-05-20T10:20:23.996Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2025-05-20T10:20:23.996Z] : 
+[info] [2025-05-20T10:20:24.472Z] : 
+[info] [2025-05-20T10:20:24.472Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2025-05-20T10:20:24.472Z] : ℹ react_in_catalyst_function: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:20:24.472Z] : 
+[info] [2025-05-20T10:20:24.473Z] : 
+[info] [2025-05-20T10:20:24.473Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-05-20T10:20:24.473Z] : ℹ client[react-app]: http://localhost:3001/app/
+[info] [2025-05-20T10:20:24.473Z] : 
+[info] [2025-05-20T10:20:27.317Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T10:20:27.317Z] : [react-plugin]: 
+[info] [2025-05-20T10:20:27.317Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T10:20:27.317Z] : [react-plugin]: 
+[info] [2025-05-20T10:20:27.317Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T10:20:27.317Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T10:20:27.317Z] : [react-plugin]: 
+[info] [2025-05-20T10:20:27.317Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T10:20:27.318Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T10:20:27.318Z] : [react-plugin]: 
+[info] [2025-05-20T10:23:12.967Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T02:41:15.027Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T02:41:15.027Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
-[info] [2025-05-16T02:41:39.845Z] : Shutting down server
-[info] [2025-05-16T02:41:39.940Z] : 
-[info] [2025-05-16T02:41:39.940Z] : ✔ Shutdown complete
-[debug] [2025-05-16T02:41:39.940Z] : NO ERRORS REGISTERED
-[debug] [2025-05-16T02:41:39.940Z] : EXEC ENDED with event: serve, message: success
-[debug] [2025-05-16T02:41:39.940Z] : TOTAL DURATION OF COMMAND EXEC : 120162
-[debug] [2025-05-16T02:41:39.944Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
-<request body omitted>
-
-[debug] [2025-05-16T02:41:42.056Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 02:41:45 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:14:22.975Z] : 
-[debug] [2025-05-16T09:14:22.980Z] : ----------------------------------------------------------------------
-[debug] [2025-05-16T09:14:22.980Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
-[debug] [2025-05-16T09:14:22.981Z] : CLI Version:  1.18.0-beta.12
-[debug] [2025-05-16T09:14:22.981Z] : Platform:     darwin
-[debug] [2025-05-16T09:14:22.981Z] : Node Version: v22.1.0
-[debug] [2025-05-16T09:14:22.981Z] : Time:         Fri May 16 2025 14:44:22 GMT+0530 (India Standard Time)
-[debug] [2025-05-16T09:14:22.981Z] : ----------------------------------------------------------------------
-[debug] [2025-05-16T09:14:22.981Z] : 
-[debug] [2025-05-16T09:14:23.178Z] : > authorizing via signed-in user option
-[debug] [2025-05-16T09:14:23.178Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
-[debug] [2025-05-16T09:14:23.184Z] : > refreshing access token <
-[debug] [2025-05-16T09:14:23.185Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
-<request body omitted>
-
-[debug] [2025-05-16T09:14:24.103Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 09:14:24 GMT","content-type":"application/json;charset=UTF-8","content-length":"2596","connection":"close","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:14:24.116Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115 
-
-[debug] [2025-05-16T09:14:25.059Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 09:14:24 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:14:25.062Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/environment 
-
-[debug] [2025-05-16T09:14:25.864Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 09:14:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:14:25.962Z] : http port : '3000' is not available. Hence port '3004' will be used instead.
-[debug] [2025-05-16T09:14:25.965Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/function 
-Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
-
-[debug] [2025-05-16T09:14:26.783Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 09:14:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:14:26.785Z] : unknown eol undefined hence skipping check
-[debug] [2025-05-16T09:14:27.074Z] : http port : '4000' is not available. Hence port '4002' will be used instead.
-[info] [2025-05-16T09:14:28.317Z] : [react-plugin]: Starting the development server...
-
-[info] [2025-05-16T09:14:28.318Z] : 
-[info] [2025-05-16T09:14:28.318Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
-[info] [2025-05-16T09:14:28.318Z] : 
-[info] [2025-05-16T09:14:28.834Z] : 
-[info] [2025-05-16T09:14:28.834Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
-[info] [2025-05-16T09:14:28.834Z] : ℹ react_in_catalyst_function: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T09:14:28.834Z] : 
-[info] [2025-05-16T09:14:28.834Z] : 
-[info] [2025-05-16T09:14:28.834Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
-[info] [2025-05-16T09:14:28.834Z] : ℹ client[react-app]: http://localhost:3004/app/
-[info] [2025-05-16T09:14:28.835Z] : 
-[info] [2025-05-16T09:14:29.887Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:14:29.887Z] : [react-plugin]: 
-[info] [2025-05-16T09:14:29.888Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:14:29.888Z] : [react-plugin]: 
-[info] [2025-05-16T09:14:29.888Z] : [react-plugin]:   Local:            http://localhost:3004/
-[info] [2025-05-16T09:14:29.888Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/
-[info] [2025-05-16T09:14:29.888Z] : [react-plugin]: 
-[info] [2025-05-16T09:14:29.888Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:14:29.888Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:14:29.888Z] : [react-plugin]: 
-[info] [2025-05-16T09:17:18.244Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:17:18.441Z] : [react-plugin]: Failed to compile.
-
-[info] [2025-05-16T09:17:18.441Z] : [react-plugin]: Module not found: SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/package.json (directory description file): SyntaxError: Expected double-quoted property name in JSON at position 1060 (line 48 column 1)
-[info] [2025-05-16T09:17:22.321Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]: 
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]: 
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]:   Local:            http://localhost:3004/
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]: 
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:17:23.435Z] : [react-plugin]: 
-[info] [2025-05-16T09:18:21.046Z] : Shutting down server
-[info] [2025-05-16T09:18:21.129Z] : 
-[info] [2025-05-16T09:18:21.130Z] : ✔ Shutdown complete
-[debug] [2025-05-16T09:18:21.131Z] : NO ERRORS REGISTERED
-[debug] [2025-05-16T09:18:21.131Z] : EXEC ENDED with event: serve, message: success
-[debug] [2025-05-16T09:18:21.131Z] : TOTAL DURATION OF COMMAND EXEC : 237957
-[debug] [2025-05-16T09:18:21.142Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
-<request body omitted>
-
-[debug] [2025-05-16T09:18:22.014Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 09:18:21 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:18:24.616Z] : 
-[debug] [2025-05-16T09:18:24.617Z] : ----------------------------------------------------------------------
-[debug] [2025-05-16T09:18:24.617Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
-[debug] [2025-05-16T09:18:24.618Z] : CLI Version:  1.18.0-beta.12
-[debug] [2025-05-16T09:18:24.618Z] : Platform:     darwin
-[debug] [2025-05-16T09:18:24.618Z] : Node Version: v22.1.0
-[debug] [2025-05-16T09:18:24.618Z] : Time:         Fri May 16 2025 14:48:24 GMT+0530 (India Standard Time)
-[debug] [2025-05-16T09:18:24.618Z] : ----------------------------------------------------------------------
-[debug] [2025-05-16T09:18:24.618Z] : 
-[debug] [2025-05-16T09:18:24.814Z] : > authorizing via signed-in user option
-[debug] [2025-05-16T09:18:24.814Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
-[debug] [2025-05-16T09:18:24.820Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115 
-
-[debug] [2025-05-16T09:18:25.578Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 09:18:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:18:25.581Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/environment 
-
-[debug] [2025-05-16T09:18:26.365Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 09:18:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:18:26.457Z] : http port : '3000' is not available. Hence port '3004' will be used instead.
-[debug] [2025-05-16T09:18:26.461Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/function 
-Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
-
-[debug] [2025-05-16T09:18:27.189Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 09:18:27 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-16T09:18:27.193Z] : unknown eol undefined hence skipping check
-[debug] [2025-05-16T09:18:27.463Z] : http port : '4000' is not available. Hence port '4002' will be used instead.
-[info] [2025-05-16T09:18:28.385Z] : [react-plugin]: Starting the development server...
-
-[info] [2025-05-16T09:18:28.386Z] : 
-[info] [2025-05-16T09:18:28.386Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
-[info] [2025-05-16T09:18:28.386Z] : 
-[info] [2025-05-16T09:18:28.838Z] : 
-[info] [2025-05-16T09:18:28.838Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
-[info] [2025-05-16T09:18:28.838Z] : ℹ react_in_catalyst_function: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T09:18:28.838Z] : 
-[info] [2025-05-16T09:18:28.838Z] : 
-[info] [2025-05-16T09:18:28.838Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
-[info] [2025-05-16T09:18:28.838Z] : ℹ client[react-app]: http://localhost:3004/app/
-[info] [2025-05-16T09:18:28.838Z] : 
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]: 
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]: 
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]: 
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:18:30.876Z] : [react-plugin]: 
-[info] [2025-05-16T09:23:19.173Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:23:19.704Z] : [react-plugin]: Compiled with warnings.
-
-[info] [2025-05-16T09:23:19.704Z] : [react-plugin]: [eslint] 
-src/AddTask.js
-  Line 13:9:  'today' is assigned a value but never used  no-unused-vars
-[info] [2025-05-16T09:23:19.704Z] : [react-plugin]: 
-Search for the keywords to learn more about each warning.
-[info] [2025-05-16T09:23:19.704Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
-
-[info] [2025-05-16T09:23:56.922Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:23:57.134Z] : [react-plugin]: Failed to compile.
-
-[info] [2025-05-16T09:23:57.134Z] : [react-plugin]: SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/src/AddTask.js: Expected corresponding JSX closing tag for <form>. (125:12)
-  123 |                 </select>
-  124 |               </div>
-> 125 |             </div>
-      |             ^
-  126 |
-  127 |             {/* Buttons */}
-  128 |             <div className="buttons mt-4">
-[info] [2025-05-16T09:24:08.724Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:24:08.859Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:24:08.859Z] : [react-plugin]: 
-[info] [2025-05-16T09:24:08.859Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:24:08.859Z] : [react-plugin]: 
-[info] [2025-05-16T09:24:08.859Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T09:24:08.859Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T09:24:08.859Z] : [react-plugin]: 
-[info] [2025-05-16T09:24:08.860Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:24:08.860Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:24:08.860Z] : [react-plugin]: 
-[info] [2025-05-16T09:24:13.041Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]: 
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]: 
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]: 
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:24:13.192Z] : [react-plugin]: 
-[info] [2025-05-16T09:46:49.442Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]: 
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]: 
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]: 
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:46:49.549Z] : [react-plugin]: 
-[info] [2025-05-16T09:49:21.429Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:49:21.649Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]: 
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]: 
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]: 
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:49:21.650Z] : [react-plugin]: 
-[info] [2025-05-16T09:58:00.420Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:58:00.648Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:58:00.648Z] : [react-plugin]: 
-[info] [2025-05-16T09:58:00.649Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:58:00.649Z] : [react-plugin]: 
-[info] [2025-05-16T09:58:00.649Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T09:58:00.649Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T09:58:00.649Z] : [react-plugin]: 
-[info] [2025-05-16T09:58:00.649Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:58:00.649Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:58:00.649Z] : [react-plugin]: 
-[info] [2025-05-16T09:59:38.744Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]: 
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]: 
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]: 
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T09:59:39.002Z] : [react-plugin]: 
-[info] [2025-05-16T10:01:02.141Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T10:01:02.302Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T10:01:02.302Z] : [react-plugin]: 
-[info] [2025-05-16T10:01:02.302Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T10:01:02.302Z] : [react-plugin]: 
-[info] [2025-05-16T10:01:02.302Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T10:01:02.303Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T10:01:02.303Z] : [react-plugin]: 
-[info] [2025-05-16T10:01:02.303Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T10:01:02.303Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T10:01:02.303Z] : [react-plugin]: 
-[info] [2025-05-16T10:07:47.753Z] : 
+[info] [2025-05-20T10:23:13.543Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:23:13.543Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:23:22.244Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:07:48.319Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:07:48.319Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:07:53.399Z] : 
+[info] [2025-05-20T10:23:22.763Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:23:22.763Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:25:15.805Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:07:53.945Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:07:53.945Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:07:55.005Z] : 
+[info] [2025-05-20T10:25:16.444Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:25:16.444Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:25:17.445Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:07:55.455Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:07:55.455Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:11:06.589Z] : 
+[info] [2025-05-20T10:25:17.860Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:25:17.860Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:25:21.755Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:11:07.029Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:11:07.029Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:40:34.492Z] : 
+[info] [2025-05-20T10:25:22.159Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:25:22.160Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:25:30.534Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:40:35.026Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:40:35.026Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[debug] [2025-05-16T10:40:40.721Z] : > refreshing access token <
-[debug] [2025-05-16T10:40:40.734Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
-<request body omitted>
+[info] [2025-05-20T10:25:30.884Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:25:30.884Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:26:09.997Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:26:10.451Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:26:10.451Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:26:15.943Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:26:16.368Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:26:16.368Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:26:26.646Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:26:27.112Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:26:27.112Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:26:35.015Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:26:35.489Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:26:35.489Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:27:00.266Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:27:00.762Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:27:00.762Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:27:02.684Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:27:03.052Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:27:03.052Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:27:17.337Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:27:17.803Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:27:17.803Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:27:58.846Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:27:59.129Z] : [react-plugin]: Failed to compile.
 
-[debug] [2025-05-16T10:40:41.581Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 10:40:41 GMT","content-type":"application/json;charset=UTF-8","content-length":"2596","connection":"close","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[info] [2025-05-16T10:42:43.476Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T10:42:43.795Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]: 
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]: 
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]: 
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T10:42:43.796Z] : [react-plugin]: 
-[info] [2025-05-16T10:43:27.236Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]: 
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]: 
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]: 
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T10:43:27.436Z] : [react-plugin]: 
-[info] [2025-05-16T10:44:25.638Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T10:44:25.875Z] : [react-plugin]: Failed to compile.
-
-[info] [2025-05-16T10:44:25.875Z] : [react-plugin]: [eslint] 
+[info] [2025-05-20T10:27:59.130Z] : [react-plugin]: [eslint] 
 src/FilterTask.js
-  Line 27:5:  Expected an assignment or function call and instead saw an expression  no-unused-expressions
+  Line 27:19:  'res' is not defined    no-undef
+  Line 27:23:  'ponse' is not defined  no-undef
 
 Search for the keywords to learn more about each error.
-[info] [2025-05-16T10:44:29.886Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T10:44:29.963Z] : [react-plugin]: Failed to compile.
+[info] [2025-05-20T10:28:00.773Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:28:00.882Z] : [react-plugin]: Failed to compile.
 
-[info] [2025-05-16T10:44:29.963Z] : [react-plugin]: SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/src/FilterTask.js: Unexpected token (27:36)
-  25 |       
-  26 |     setTasks(response.data);
-> 27 |     console.log("TASKS::: ", tasks),;
-     |                                     ^
-  28 |     // window.location.reload();
-  29 |     })
-  30 |     .catch((err) => {
-[info] [2025-05-16T10:44:32.813Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]: 
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]: 
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]: 
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T10:44:32.985Z] : [react-plugin]: 
-[info] [2025-05-16T10:45:14.400Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T10:45:14.591Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T10:45:14.591Z] : [react-plugin]: 
-[info] [2025-05-16T10:45:14.591Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T10:45:14.591Z] : [react-plugin]: 
-[info] [2025-05-16T10:45:14.592Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T10:45:14.592Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T10:45:14.592Z] : [react-plugin]: 
-[info] [2025-05-16T10:45:14.592Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T10:45:14.592Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T10:45:14.592Z] : [react-plugin]: 
-[info] [2025-05-16T10:45:15.775Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T10:45:15.904Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T10:45:15.904Z] : [react-plugin]: 
-[info] [2025-05-16T10:45:15.904Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T10:45:15.904Z] : [react-plugin]: 
-[info] [2025-05-16T10:45:15.904Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T10:45:15.904Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T10:45:15.905Z] : [react-plugin]: 
-[info] [2025-05-16T10:45:15.905Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T10:45:15.905Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T10:45:15.905Z] : [react-plugin]: 
-[info] [2025-05-16T10:51:02.429Z] : 
+[info] [2025-05-20T10:28:00.882Z] : [react-plugin]: SyntaxError: /Users/sakthi-20436/Documents/ReactSmallProjects/crudusingReactUSTest/react-app/src/FilterTask.js: Unexpected token, expected "," (27:26)
+  25 |     })
+  26 |     .catch(function (error) {
+> 27 |       console.log(response]);
+     |                           ^
+  28 |       alert(error.message);
+  29 |     });
+  30 |   };
+[info] [2025-05-20T10:28:03.834Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:28:03.975Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-05-20T10:28:03.975Z] : [react-plugin]: [eslint] 
+src/FilterTask.js
+  Line 27:19:  'response' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2025-05-20T10:28:14.036Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:28:14.244Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-05-20T10:28:14.244Z] : [react-plugin]: [eslint] 
+src/FilterTask.js
+  Line 27:19:  'response' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2025-05-20T10:28:14.812Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:28:14.947Z] : [react-plugin]: Failed to compile.
+
+[info] [2025-05-20T10:28:14.947Z] : [react-plugin]: [eslint] 
+src/FilterTask.js
+  Line 27:19:  'response' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2025-05-20T10:28:25.781Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:28:25.951Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T10:28:25.951Z] : [react-plugin]: 
+[info] [2025-05-20T10:28:25.951Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T10:28:25.951Z] : [react-plugin]: 
+[info] [2025-05-20T10:28:25.952Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T10:28:25.952Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T10:28:25.952Z] : [react-plugin]: 
+[info] [2025-05-20T10:28:25.952Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T10:28:25.952Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T10:28:25.952Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:00.876Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:32:01.109Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T10:32:01.109Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:01.109Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T10:32:01.110Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:01.110Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T10:32:01.110Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T10:32:01.110Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:01.110Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T10:32:01.110Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T10:32:01.110Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:07.942Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:32:08.136Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T10:32:08.136Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:08.136Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T10:32:08.136Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:08.137Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T10:32:08.137Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T10:32:08.137Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:08.137Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T10:32:08.137Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T10:32:08.137Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:32.641Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T10:32:32.809Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:34.930Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]: 
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T10:32:35.035Z] : [react-plugin]: 
+[info] [2025-05-20T10:34:35.104Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:51:02.958Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:51:02.958Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:52:00.946Z] : 
+[info] [2025-05-20T10:34:35.604Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:34:35.604Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:34:53.562Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:52:01.471Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:52:01.471Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:52:13.253Z] : 
+[info] [2025-05-20T10:34:54.017Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:34:54.017Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:34:59.106Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:52:13.679Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:52:13.679Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:56:23.464Z] : 
+[info] [2025-05-20T10:34:59.541Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:34:59.541Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:35:09.093Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:56:23.999Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:56:23.999Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:56:42.922Z] : 
+[info] [2025-05-20T10:35:09.534Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:35:09.535Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:35:40.216Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:56:43.345Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:56:43.345Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:56:44.834Z] : 
+[info] [2025-05-20T10:35:40.680Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:35:40.680Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:36:46.546Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:56:45.266Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:56:45.266Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:56:46.753Z] : 
+[info] [2025-05-20T10:36:47.092Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:36:47.092Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:36:49.773Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:56:47.150Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:56:47.150Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T10:57:01.379Z] : 
+[info] [2025-05-20T10:36:50.230Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:36:50.230Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:36:54.510Z] : 
 change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T10:57:01.796Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T10:57:01.796Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[debug] [2025-05-16T12:04:29.122Z] : > refreshing access token <
-[debug] [2025-05-16T12:04:29.182Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+[info] [2025-05-20T10:36:54.970Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:36:54.970Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:37:39.047Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:37:39.601Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:37:39.601Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:37:45.899Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:37:46.359Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:37:46.359Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:37:53.865Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:37:54.447Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:37:54.447Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:37:56.183Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:37:56.562Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:37:56.562Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:38:02.445Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:38:02.891Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:38:02.891Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:38:07.085Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:38:07.517Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:38:07.517Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:38:08.517Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:38:08.986Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:38:08.986Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:40:01.721Z] : 
+change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
+[info] [2025-05-20T10:40:02.200Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
+[info] [2025-05-20T10:40:02.200Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:40:28.740Z] : Shutting down server
+[info] [2025-05-20T10:40:28.856Z] : 
+[info] [2025-05-20T10:40:28.857Z] : ✔ Shutdown complete
+[debug] [2025-05-20T10:40:28.857Z] : NO ERRORS REGISTERED
+[debug] [2025-05-20T10:40:28.858Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-05-20T10:40:28.858Z] : TOTAL DURATION OF COMMAND EXEC : 1209002
+[debug] [2025-05-20T10:40:28.869Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
 <request body omitted>
 
-[debug] [2025-05-16T12:04:30.050Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Fri, 16 May 2025 12:04:29 GMT","content-type":"application/json;charset=UTF-8","content-length":"2596","connection":"close","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2025-05-20T10:40:29.767Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:40:29 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[info] [2025-05-16T12:21:37.221Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:21:37.848Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:21:37.848Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T12:23:29.297Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:23:29.803Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:23:29.803Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T12:24:10.572Z] : [react-plugin]: Compiling...
-[info] [2025-05-16T12:24:11.207Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-16T12:24:11.208Z] : [react-plugin]: 
-[info] [2025-05-16T12:24:11.208Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-16T12:24:11.209Z] : [react-plugin]: 
-[info] [2025-05-16T12:24:11.209Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-16T12:24:11.210Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-16T12:24:11.210Z] : [react-plugin]: 
-[info] [2025-05-16T12:24:11.210Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-16T12:24:11.210Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-16T12:24:11.210Z] : [react-plugin]: 
-[info] [2025-05-16T12:31:43.693Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:31:44.226Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:31:44.226Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T12:31:46.597Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:31:47.044Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:31:47.044Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T12:31:53.657Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:31:54.023Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:31:54.024Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T12:51:21.474Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:51:22.068Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:51:22.068Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T12:51:23.583Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:51:23.997Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:51:23.997Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T12:51:26.000Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:51:26.381Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:51:26.381Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T12:53:16.781Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T12:53:17.366Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T12:53:17.366Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-16T13:36:58.410Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-16T13:36:59.089Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-16T13:36:59.093Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-19T03:15:01.956Z] : 
-change of index.js in react_in_catalyst_function detected. Preparing your function, please wait...
-[info] [2025-05-19T03:15:02.522Z] : ℹ AdvancedIO[react_in_catalyst_function]: ready!
-[info] [2025-05-19T03:15:02.522Z] : ℹ AdvancedIO[react_in_catalyst_function]: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-19T06:45:41.722Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:45:42.834Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]: 
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]: 
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]: 
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:45:42.835Z] : [react-plugin]: 
-[debug] [2025-05-19T06:45:42.866Z] : > refreshing access token <
-[debug] [2025-05-19T06:45:42.869Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
-<request body omitted>
+[debug] [2025-05-20T10:40:32.745Z] : 
+[debug] [2025-05-20T10:40:32.747Z] : ----------------------------------------------------------------------
+[debug] [2025-05-20T10:40:32.747Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst deploy
+[debug] [2025-05-20T10:40:32.748Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-05-20T10:40:32.748Z] : Platform:     darwin
+[debug] [2025-05-20T10:40:32.748Z] : Node Version: v22.1.0
+[debug] [2025-05-20T10:40:32.748Z] : Time:         Tue May 20 2025 16:10:32 GMT+0530 (India Standard Time)
+[debug] [2025-05-20T10:40:32.748Z] : ----------------------------------------------------------------------
+[debug] [2025-05-20T10:40:32.748Z] : 
+[debug] [2025-05-20T10:40:32.950Z] : > authorizing via signed-in user option
+[debug] [2025-05-20T10:40:32.950Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-05-20T10:40:32.955Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115 
 
-[debug] [2025-05-19T06:45:43.646Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Mon, 19 May 2025 06:45:43 GMT","content-type":"application/json;charset=UTF-8","content-length":"2596","connection":"close","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2025-05-20T10:40:33.827Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:40:33 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[info] [2025-05-19T06:45:46.600Z] : Shutting down server
-[info] [2025-05-19T06:45:46.689Z] : 
-[info] [2025-05-19T06:45:46.689Z] : ✔ Shutdown complete
-[debug] [2025-05-19T06:45:46.689Z] : NO ERRORS REGISTERED
-[debug] [2025-05-19T06:45:46.689Z] : EXEC ENDED with event: serve, message: success
-[debug] [2025-05-19T06:45:46.689Z] : TOTAL DURATION OF COMMAND EXEC : 250041880
-[debug] [2025-05-19T06:45:46.696Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
-<request body omitted>
+[debug] [2025-05-20T10:40:33.829Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/environment 
 
-[debug] [2025-05-19T06:45:47.510Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Mon, 19 May 2025 06:45:47 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2025-05-20T10:40:34.597Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:40:34 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2025-05-19T06:46:18.573Z] : 
-[debug] [2025-05-19T06:46:18.588Z] : ----------------------------------------------------------------------
-[debug] [2025-05-19T06:46:18.588Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
-[debug] [2025-05-19T06:46:18.589Z] : CLI Version:  1.18.0-beta.12
-[debug] [2025-05-19T06:46:18.589Z] : Platform:     darwin
-[debug] [2025-05-19T06:46:18.589Z] : Node Version: v22.1.0
-[debug] [2025-05-19T06:46:18.589Z] : Time:         Mon May 19 2025 12:16:18 GMT+0530 (India Standard Time)
-[debug] [2025-05-19T06:46:18.589Z] : ----------------------------------------------------------------------
-[debug] [2025-05-19T06:46:18.589Z] : 
-[debug] [2025-05-19T06:46:18.795Z] : > authorizing via signed-in user option
-[debug] [2025-05-19T06:46:18.795Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
-[debug] [2025-05-19T06:46:18.802Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115 
-
-[debug] [2025-05-19T06:46:19.674Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Mon, 19 May 2025 06:46:19 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-19T06:46:19.675Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/environment 
-
-[debug] [2025-05-19T06:46:20.413Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Mon, 19 May 2025 06:46:20 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
-
-[debug] [2025-05-19T06:46:20.511Z] : http port : '3000' is not available. Hence port '3004' will be used instead.
-[debug] [2025-05-19T06:46:20.516Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/function 
+[debug] [2025-05-20T10:40:34.603Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/function 
 Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
 
-[debug] [2025-05-19T06:46:21.347Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Mon, 19 May 2025 06:46:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2025-05-20T10:40:35.414Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:40:35 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2025-05-19T06:46:21.348Z] : unknown eol undefined hence skipping check
-[debug] [2025-05-19T06:46:21.644Z] : http port : '4000' is not available. Hence port '4002' will be used instead.
-[info] [2025-05-19T06:46:22.818Z] : [react-plugin]: Starting the development server...
+[debug] [2025-05-20T10:40:35.418Z] : unknown eol undefined hence skipping check
+[debug] [2025-05-20T10:40:35.714Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/server/upsert 
 
-[info] [2025-05-19T06:46:22.819Z] : 
-[info] [2025-05-19T06:46:22.819Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
-[info] [2025-05-19T06:46:22.820Z] : 
-[info] [2025-05-19T06:46:23.315Z] : 
-[info] [2025-05-19T06:46:23.316Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
-[info] [2025-05-19T06:46:23.316Z] : ℹ react_in_catalyst_function: http://localhost:3004/server/react_in_catalyst_function/
-[info] [2025-05-19T06:46:23.316Z] : 
-[info] [2025-05-19T06:46:23.316Z] : 
-[info] [2025-05-19T06:46:23.316Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
-[info] [2025-05-19T06:46:23.316Z] : ℹ client[react-app]: http://localhost:3004/app/
-[info] [2025-05-19T06:46:23.316Z] : 
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:46:25.178Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:46:25.179Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:31.928Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:46:32.261Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:42.531Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:46:42.674Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:46:42.674Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:42.674Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:46:42.674Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:42.674Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:46:42.674Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:46:42.675Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:42.675Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:46:42.675Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:46:42.675Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:48.817Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:46:48.921Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:46:48.921Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:48.922Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:46:48.922Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:48.922Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:46:48.922Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:46:48.922Z] : [react-plugin]: 
-[info] [2025-05-19T06:46:48.922Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:46:48.922Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:46:48.922Z] : [react-plugin]: 
-[info] [2025-05-19T06:48:12.814Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:48:13.039Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:48:13.039Z] : [react-plugin]: 
-[info] [2025-05-19T06:48:13.039Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:48:13.039Z] : [react-plugin]: 
-[info] [2025-05-19T06:48:13.040Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:48:13.040Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:48:13.040Z] : [react-plugin]: 
-[info] [2025-05-19T06:48:13.040Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:48:13.040Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:48:13.040Z] : [react-plugin]: 
-[info] [2025-05-19T06:49:07.157Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:49:07.281Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:49:07.281Z] : [react-plugin]: 
-[info] [2025-05-19T06:49:07.282Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:49:07.282Z] : [react-plugin]: 
-[info] [2025-05-19T06:49:07.282Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:49:07.282Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:49:07.282Z] : [react-plugin]: 
-[info] [2025-05-19T06:49:07.282Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:49:07.282Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:49:07.282Z] : [react-plugin]: 
-[info] [2025-05-19T06:50:10.379Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:50:10.511Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:50:10.511Z] : [react-plugin]: 
-[info] [2025-05-19T06:50:10.512Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:50:10.512Z] : [react-plugin]: 
-[info] [2025-05-19T06:50:10.512Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:50:10.512Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:50:10.512Z] : [react-plugin]: 
-[info] [2025-05-19T06:50:10.512Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:50:10.512Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:50:10.512Z] : [react-plugin]: 
-[info] [2025-05-19T06:50:26.545Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]: 
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]: 
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]: 
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:50:26.647Z] : [react-plugin]: 
-[info] [2025-05-19T06:51:44.882Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]: 
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]: 
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]: 
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:51:45.100Z] : [react-plugin]: 
-[info] [2025-05-19T06:51:56.306Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]: 
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]: 
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]: 
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:51:56.449Z] : [react-plugin]: 
-[info] [2025-05-19T06:52:12.209Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:52:12.341Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:52:12.341Z] : [react-plugin]: 
-[info] [2025-05-19T06:52:12.341Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:52:12.341Z] : [react-plugin]: 
-[info] [2025-05-19T06:52:12.341Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:52:12.341Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:52:12.342Z] : [react-plugin]: 
-[info] [2025-05-19T06:52:12.342Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:52:12.342Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:52:12.342Z] : [react-plugin]: 
-[info] [2025-05-19T06:52:56.873Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:52:57.003Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:52:57.003Z] : [react-plugin]: 
-[info] [2025-05-19T06:52:57.003Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:52:57.003Z] : [react-plugin]: 
-[info] [2025-05-19T06:52:57.004Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:52:57.004Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:52:57.004Z] : [react-plugin]: 
-[info] [2025-05-19T06:52:57.004Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:52:57.004Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:52:57.004Z] : [react-plugin]: 
-[info] [2025-05-19T06:53:08.068Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:53:08.199Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:53:08.199Z] : [react-plugin]: 
-[info] [2025-05-19T06:53:08.199Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:53:08.199Z] : [react-plugin]: 
-[info] [2025-05-19T06:53:08.199Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:53:08.199Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:53:08.200Z] : [react-plugin]: 
-[info] [2025-05-19T06:53:08.200Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:53:08.200Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:53:08.201Z] : [react-plugin]: 
-[info] [2025-05-19T06:54:33.105Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:54:33.262Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:54:33.262Z] : [react-plugin]: 
-[info] [2025-05-19T06:54:33.262Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:54:33.263Z] : [react-plugin]: 
-[info] [2025-05-19T06:54:33.263Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:54:33.263Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:54:33.263Z] : [react-plugin]: 
-[info] [2025-05-19T06:54:33.263Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:54:33.263Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:54:33.263Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:01.993Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:55:02.130Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:09.437Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:55:09.515Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:55:09.515Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:09.516Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:55:09.516Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:09.516Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:55:09.516Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:55:09.516Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:09.516Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:55:09.516Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:55:09.516Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:57.976Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]: 
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:55:58.113Z] : [react-plugin]: 
-[info] [2025-05-19T06:56:21.233Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]: 
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]: 
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]: 
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:56:21.339Z] : [react-plugin]: 
-[info] [2025-05-19T06:56:49.860Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:56:49.985Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]: 
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]: 
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]: 
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:56:49.986Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:07.419Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:57:07.510Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:57:07.510Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:07.510Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:57:07.510Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:07.510Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:57:07.510Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:57:07.511Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:07.511Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:57:07.511Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:57:07.511Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:09.152Z] : [react-plugin]: Compiling...
-[info] [2025-05-19T06:57:09.241Z] : [react-plugin]: Compiled successfully!
-[info] [2025-05-19T06:57:09.241Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:09.242Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2025-05-19T06:57:09.242Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:09.242Z] : [react-plugin]:   Local:            http://localhost:3004/app/
-[info] [2025-05-19T06:57:09.242Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3004/app/
-[info] [2025-05-19T06:57:09.242Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:09.242Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2025-05-19T06:57:09.242Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2025-05-19T06:57:09.242Z] : [react-plugin]: 
-[info] [2025-05-19T06:57:18.401Z] : Shutting down server
-[info] [2025-05-19T06:57:18.490Z] : 
-[info] [2025-05-19T06:57:18.490Z] : ✔ Shutdown complete
-[debug] [2025-05-19T06:57:18.490Z] : NO ERRORS REGISTERED
-[debug] [2025-05-19T06:57:18.490Z] : EXEC ENDED with event: serve, message: success
-[debug] [2025-05-19T06:57:18.490Z] : TOTAL DURATION OF COMMAND EXEC : 659701
-[debug] [2025-05-19T06:57:18.499Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+[debug] [2025-05-20T10:40:41.976Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:40:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-05-20T10:40:42.043Z] : ℹ Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2025-05-20T10:40:42.043Z] : ℹ Building Application...
+[info] [2025-05-20T10:40:42.917Z] : [react-plugin]: Creating an optimized production build...
+[info] [2025-05-20T10:40:46.952Z] : [react-plugin]: Compiled successfully.
+
+[info] [2025-05-20T10:40:46.952Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2025-05-20T10:40:46.960Z] : [react-plugin]:   73.57 kB         build/static/js/main.81d702da.js
+[info] [2025-05-20T10:40:46.960Z] : [react-plugin]:   2.23 kB (+38 B)  build/static/css/main.368e7d5e.css
+[info] [2025-05-20T10:40:46.960Z] : [react-plugin]:   1.66 kB          build/static/js/453.6a0a8fee.chunk.js
+[info] [2025-05-20T10:40:46.960Z] : [react-plugin]:  
+[debug] [2025-05-20T10:40:47.168Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/webapp 
+
+[debug] [2025-05-20T10:40:50.372Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:40:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-05-20T10:40:50.373Z] : 
+[info] [2025-05-20T10:40:50.374Z] : ℹ functions(react_in_catalyst_function): URL => https://reactincatalyst-860829830.development.catalystserverless.com/server/react_in_catalyst_function/
+[info] [2025-05-20T10:40:50.374Z] : ✔ functions(react_in_catalyst_function): deploy successful
+[info] [2025-05-20T10:40:50.374Z] : 
+[info] [2025-05-20T10:40:50.374Z] : ✔ client: deploy successful
+[info] [2025-05-20T10:40:50.374Z] : ℹ client: URL => https://reactincatalyst-860829830.development.catalystserverless.com/app/index.html
+[info] [2025-05-20T10:40:50.374Z] : 
+[info] [2025-05-20T10:40:50.374Z] : ✔ Catalyst deploy complete!
+[debug] [2025-05-20T10:40:50.375Z] : NO ERRORS REGISTERED
+[debug] [2025-05-20T10:40:50.375Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-05-20T10:40:50.375Z] : TOTAL DURATION OF COMMAND EXEC : 17432
+[debug] [2025-05-20T10:40:50.383Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
 <request body omitted>
 
-[debug] [2025-05-19T06:57:19.415Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Mon, 19 May 2025 06:57:19 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2025-05-20T10:40:51.224Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:40:51 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T10:44:50.660Z] : 
+[debug] [2025-05-20T10:44:50.661Z] : ----------------------------------------------------------------------
+[debug] [2025-05-20T10:44:50.661Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2025-05-20T10:44:50.661Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-05-20T10:44:50.661Z] : Platform:     darwin
+[debug] [2025-05-20T10:44:50.662Z] : Node Version: v22.1.0
+[debug] [2025-05-20T10:44:50.662Z] : Time:         Tue May 20 2025 16:14:50 GMT+0530 (India Standard Time)
+[debug] [2025-05-20T10:44:50.662Z] : ----------------------------------------------------------------------
+[debug] [2025-05-20T10:44:50.662Z] : 
+[debug] [2025-05-20T10:44:50.862Z] : > authorizing via signed-in user option
+[debug] [2025-05-20T10:44:50.862Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2025-05-20T10:44:50.867Z] : > refreshing access token <
+[debug] [2025-05-20T10:44:50.868Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2025-05-20T10:44:51.766Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:44:51 GMT","content-type":"application/json;charset=UTF-8","content-length":"2596","connection":"close","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T10:44:51.777Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115 
+
+[debug] [2025-05-20T10:44:52.651Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:44:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T10:44:52.653Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/environment 
+
+[debug] [2025-05-20T10:44:53.474Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:44:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T10:44:53.571Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
+[debug] [2025-05-20T10:44:53.575Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2025-05-20T10:44:54.389Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 10:44:54 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T10:44:54.393Z] : unknown eol undefined hence skipping check
+[debug] [2025-05-20T10:44:54.682Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[info] [2025-05-20T10:44:55.618Z] : [react-plugin]: Starting the development server...
+
+[info] [2025-05-20T10:44:55.618Z] : 
+[info] [2025-05-20T10:44:55.618Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2025-05-20T10:44:55.618Z] : 
+[info] [2025-05-20T10:44:56.098Z] : 
+[info] [2025-05-20T10:44:56.098Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2025-05-20T10:44:56.098Z] : ℹ react_in_catalyst_function: http://localhost:3001/server/react_in_catalyst_function/
+[info] [2025-05-20T10:44:56.098Z] : 
+[info] [2025-05-20T10:44:56.098Z] : 
+[info] [2025-05-20T10:44:56.098Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-05-20T10:44:56.098Z] : ℹ client[react-app]: http://localhost:3001/app/
+[info] [2025-05-20T10:44:56.098Z] : 
+[info] [2025-05-20T10:44:57.110Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T10:44:57.110Z] : [react-plugin]: 
+[info] [2025-05-20T10:44:57.110Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T10:44:57.110Z] : [react-plugin]: 
+[info] [2025-05-20T10:44:57.110Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T10:44:57.110Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T10:44:57.110Z] : [react-plugin]: 
+[info] [2025-05-20T10:44:57.111Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T10:44:57.111Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T10:44:57.111Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:29.884Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T11:02:31.174Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:39.174Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T11:02:39.354Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:43.214Z] : [react-plugin]: Compiling...
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]: Compiled successfully!
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]:   On Your Network:  http://10.15.97.252:3001/app/
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2025-05-20T11:02:43.347Z] : [react-plugin]: 
+[info] [2025-05-20T11:02:51.352Z] : Shutting down server
+[info] [2025-05-20T11:02:51.446Z] : 
+[info] [2025-05-20T11:02:51.446Z] : ✔ Shutdown complete
+[debug] [2025-05-20T11:02:51.446Z] : NO ERRORS REGISTERED
+[debug] [2025-05-20T11:02:51.446Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-05-20T11:02:51.446Z] : TOTAL DURATION OF COMMAND EXEC : 1080589
+[debug] [2025-05-20T11:02:51.449Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-05-20T11:02:52.350Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 11:02:52 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T11:02:55.631Z] : 
+[debug] [2025-05-20T11:02:55.632Z] : ----------------------------------------------------------------------
+[debug] [2025-05-20T11:02:55.632Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst deploy
+[debug] [2025-05-20T11:02:55.633Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-05-20T11:02:55.633Z] : Platform:     darwin
+[debug] [2025-05-20T11:02:55.633Z] : Node Version: v22.1.0
+[debug] [2025-05-20T11:02:55.633Z] : Time:         Tue May 20 2025 16:32:55 GMT+0530 (India Standard Time)
+[debug] [2025-05-20T11:02:55.633Z] : ----------------------------------------------------------------------
+[debug] [2025-05-20T11:02:55.633Z] : 
+[debug] [2025-05-20T11:02:55.828Z] : > authorizing via signed-in user option
+[debug] [2025-05-20T11:02:55.828Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-05-20T11:02:55.834Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115 
+
+[debug] [2025-05-20T11:02:56.569Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 11:02:56 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T11:02:56.573Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/environment 
+
+[debug] [2025-05-20T11:02:57.297Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 11:02:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T11:02:57.308Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2025-05-20T11:02:58.047Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 11:02:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-05-20T11:02:58.051Z] : unknown eol undefined hence skipping check
+[debug] [2025-05-20T11:02:58.361Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/server/upsert 
+
+[debug] [2025-05-20T11:03:03.260Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 11:03:03 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-05-20T11:03:03.319Z] : ℹ Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2025-05-20T11:03:03.319Z] : ℹ Building Application...
+[info] [2025-05-20T11:03:04.034Z] : [react-plugin]: Creating an optimized production build...
+[info] [2025-05-20T11:03:06.868Z] : [react-plugin]: Compiled successfully.
+
+[info] [2025-05-20T11:03:06.868Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2025-05-20T11:03:06.876Z] : [react-plugin]:   73.56 kB (-11 B)  build/static/js/main.0649c4f7.js
+[info] [2025-05-20T11:03:06.876Z] : [react-plugin]:   2.23 kB           build/static/css/main.368e7d5e.css
+[info] [2025-05-20T11:03:06.876Z] : [react-plugin]:   1.66 kB           build/static/js/453.6a0a8fee.chunk.js
+[info] [2025-05-20T11:03:06.876Z] : [react-plugin]:  
+[debug] [2025-05-20T11:03:07.081Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/26818000000134115/webapp 
+
+[debug] [2025-05-20T11:03:09.758Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 11:03:09 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-05-20T11:03:09.760Z] : 
+[info] [2025-05-20T11:03:09.760Z] : ℹ functions(react_in_catalyst_function): URL => https://reactincatalyst-860829830.development.catalystserverless.com/server/react_in_catalyst_function/
+[info] [2025-05-20T11:03:09.760Z] : ✔ functions(react_in_catalyst_function): deploy successful
+[info] [2025-05-20T11:03:09.760Z] : 
+[info] [2025-05-20T11:03:09.760Z] : ✔ client: deploy successful
+[info] [2025-05-20T11:03:09.760Z] : ℹ client: URL => https://reactincatalyst-860829830.development.catalystserverless.com/app/index.html
+[info] [2025-05-20T11:03:09.760Z] : 
+[info] [2025-05-20T11:03:09.761Z] : ✔ Catalyst deploy complete!
+[debug] [2025-05-20T11:03:09.761Z] : NO ERRORS REGISTERED
+[debug] [2025-05-20T11:03:09.761Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-05-20T11:03:09.762Z] : TOTAL DURATION OF COMMAND EXEC : 13938
+[debug] [2025-05-20T11:03:09.766Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-05-20T11:03:10.671Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 May 2025 11:03:10 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 

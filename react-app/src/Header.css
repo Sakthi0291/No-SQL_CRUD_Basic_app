@@ -42,4 +42,18 @@
   .heading a:hover {
     color: #007bff; 
   }
+
+  .naviagtion-btn{
+    height: 36px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .naviagtion-btn:hover{
+    background-color: blue;
+    color: white;
+  }
   

@@ -1,22 +1,22 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-// import PersonIcon from '@mui/icons-material/Person';
 import './Header.css'
-
-
-
 
 export default function Header() {
   return (
     <div className='heading'>
-      {/* <PersonIcon/> */}
+    
       <span >Task Manager</span>
       <ul>
         <li>
-            <Link to={"/AddTask"}>Add task</Link>
+            <Link to={"/AddTask"}>
+            <button className='naviagtion-btn'>Add task</button>
+            </Link>
         </li>
         <li>
-            <Link to={"/FilterTask"}>Filter</Link>
+            <Link to={"/FilterTask"}>
+               <button className='naviagtion-btn'>Filter task</button>
+            </Link>
         </li>
       </ul>
     </div>
